@@ -16,8 +16,11 @@ public class Main {
         for (int i = 1; i <=10 ; i++) {
             Downloader downloader = new Downloader(semaphore,i);
             downloader.start();
-
+if(downloader.isInterrupted()){
+    System.out.println("Файл удален с сервера");
+}
         }
+
 
 
     }
