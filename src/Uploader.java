@@ -12,7 +12,7 @@ public class Uploader extends Thread {
 
                 System.out.println("Загружаю файл размер :"+file.getFILE());
                 System.out.println("Скорость загрузки :"+file.getDownloadSpeed() + " Мб/с");
-                sleep(5000);
+                sleep(1000);
                 System.out.println("Фаил загружен");
 
             }catch (InterruptedException e){}
